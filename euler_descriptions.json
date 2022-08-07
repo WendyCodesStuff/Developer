@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Multiples of 3 and 5",
+      "description": "ooh lots of stuff",
+      "code": "loads of code"
+    },
+      {
+      "id": 2,
+      "name": "Even Fibonacci numbers",
+      "description": "ooh lots of stuff about fib",
+      "code": "loads of code"
+    },
+      {
+      "id": 3,
+      "name": "Largest prime factor",
+      "description": "primes and all that",
+      "code": "loads of code"
+    }
+  ]
+

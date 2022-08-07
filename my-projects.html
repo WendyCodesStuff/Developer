@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title>Wendy Booth - Developer</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Wendy Booth" />
+         <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!--<script type="text/javascript" src="json/euler_descriptions.json"></script>-->
+        
+        <!-- json file type-->
+        <!--<input type="file" id="jsonfileinput" />-->
+
+        <!-- <script type="module" src="./index.js"></script> -->
+        <!-- <script type="text/javascript" language="javascript"
+          src='./euler_descriptions.json'>
+          $(document).ready(function(e) {
+                console.log(euler_descriptions);
+        }); -->
+
+        </script> 
+
+        <script type="module">
+                import hello from './euler_descriptions.json'; // Or the extension could be just `.js`
+                console.log(hello);
+              </script>
+        <script type="text/javascript"> 
+            
+            // function get_json(){
+            //     //var configData;
+            //     // alert("Jason");
+            //     // //import configData from 'euler_descriptions.json';
+                
+            //     // document.getElementById('euler_description').innerHTML= configData;
+            //     /*import configData from 'euler_descriptions.json';
+                
+            //     document.getElementById('euler_description').innerHTML = JSON.stringify(configData);*/
+            // }
+            function get_json(){
+                alert("Hello! I am an alert box!!");
+                //myjson = JSON.parse(data);
+                //alert("blah");
+            }
+
+            
+           /* $(document).ready(function(){
+                $.getJSON("json/euler_descriptions.json", function(data){
+                    alert(data.euler_blurb.id);
+                    alert(data.euler_blurb.name); 
+                }).fail(function(){
+                    alert("An error has occurred.");
+                });
+            });*/
+
+            /*function get_json(){
+                $(document).ready(function () {
+                    alert("a");
+                    // FETCHING DATA FROM JSON FILE
+                    $.getJSON("euler_descriptions.json", 
+                            function (data) {
+                        var project = '';
+                        alert("b");
+                        // ITERATING THROUGH OBJECTS
+                        $.each(data, function (key, value) {
+                            alert("c");
+                            //CONSTRUCTION OF ROWS HAVING
+                            // DATA FROM JSON OBJECT
+                            project = value.id;
+                            alert(project);
+                        });
+                          
+            
+                    });
+                });
+            }*/
+
+            /*function get_json(){
+                alert(1);
+                fetch("euler_descriptions.json")
+                .then(response => response.json())
+                .then(json => alert((json.id)));
+            }*/
+            </script>
+ 
+
+            <!--function show_euler(){
+                
+                document.getElementById("euler_description").innerHTML=document.getElementById("selectOption").value;
+                return true;
+ 
+            }*/
+            function show_euler_desc(){
+                document.getElementById("euler_description").innerHTML=(myjson[document.getElementById("selectOption").value].description);
+                
+                return true;
+ 
+            }-->
+
+
+            </script>
+    </head>
+    <body id="page-top" onload="get_json()">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!--<a class="navbar-brand"><img src="assets/img/Programming.png" alt="Microsoft Certification badge" /></a>-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="hover-underline-animation"><a class="nav-link" href="https://github.com/wendycodesstuff">GitHub</a></li>
+                        <li class="hover-underline-animation"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="hover-underline-animation"><a class="nav-link" href="#about">About</a></li>
+                        <!--Original nav item code <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>-->
+                        <li class="hover-underline-animation"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+               
+                <div class="masthead-subheading-nodecoration" ></br><a href="index.html">Wendy Booth</a></div>
+                <div class="masthead-heading text-uppercase">My C# stuff</div>
+                   <div class="container">
+                            <div class="row justify-content-md-center">
+                                <div class="col col-lg-2">
+                                        <a class="btn btn-primary btn-med text-uppercase" href="#projecteuler">Project</br>Euler</a>
+                                   
+                                </div>
+                                <div class="col-md-auto">
+                                        <a class="btn btn-primary btn-med text-uppercase" href="#keyskills">Twitter</br>Bot</a>
+                                   
+                                </div>
+                                <div class="col col-lg-2">
+                                        <a class="btn btn-primary btn-med text-uppercase" href="#keyskills">Countdown</br>Maths</a>
+                                  
+                                </div>
+                            </div>
+                            
+                         </div>
+                    </div>
+            </br>
+         <!--      <img class="microsoft-badge" src="assets/img/Programming.png" alt="Microsoft Certification badge" />-->
+            
+            </div>
+        </header>
+        <!-- Project Euler-->
+        <section class="page-section" data-bs-toggle="modal" id="projecteuler">
+            <div class="container" >
+                <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Project Euler</h2>
+                        <h3 class="section-subheading text-muted">Project Euler is a series of mathematical problems which are generally not solvable by brainpower alone, but are intended to be tackled with algorithms. These are great practice for mathematically-minded coders and vary in difficulty from the sum of all multiples of 3 and 5 below 1000 to ... well puzzles infinitely more complicated!</h3>
+                </div>
+                <div class="centre-next">
+                    <div class="select">
+                        <select name="selectOption" id="selectOption" onChange="show_euler_desc()";>
+                          <option>Choose a project</option>
+                          <option value="1">Multiples of 3 and 5</option>
+                          <option value="2">Even Fibonacci numbers</option>
+                          <option value="3">Largest prime factor</option>
+                        </select>
+                        
+                    </div>
+                </div>
+                <div id="euler_description"></div>
+                <!--<div class="col-lg-4 col-sm-6 mb-4">-->
+                    <!-- Multiples of 3 and 5 
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#modalMultiplesof3and5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="card-img-top" src="https://1660200928.rsc.cdn77.org/wp-content/uploads/2022/03/Mitratech-Announces-Record-Growth-and-Momentum-in-2021.jpg" height="100%" overflow="hidden" alt="Business man and technology symbolism" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">C#</div>
+                            <div class="portfolio-caption-subheading text-muted">DataStoreDSX</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    Even Fibonacci 
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#modalEvenFibonacci">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="card-img-top" src="https://1660200928.rsc.cdn77.org/wp-content/uploads/2022/03/Mitratech-Announces-Record-Growth-and-Momentum-in-2021.jpg" height="100%" overflow="hidden" alt="Business man and technology symbolism" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">C#</div>
+                            <div class="portfolio-caption-subheading text-muted">DataStoreDSX</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    Largest prime factor 
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#modalLargestPrimeFactor">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="card-img-top" src="https://1660200928.rsc.cdn77.org/wp-content/uploads/2022/03/Mitratech-Announces-Record-Growth-and-Momentum-in-2021.jpg" height="100%" overflow="hidden" alt="Business man and technology symbolism" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">C#</div>
+                            <div class="portfolio-caption-subheading text-muted">DataStoreDSX</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- Twitter Bot-->
+        <section class="page-section my-bg-light" id="twitterbot">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Twitter Bot</h2>
+                    <h3 class="section-subheading text-muted">A bot account designed to tweet inspirational writing quotes and collect followers.</h3>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Me-->
+        <section class="page-section bg-dark" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase  text-white">About Me</h2>
+                    <h3 class="section-subheading text-light">My programming career began in 1997 as a Y2K Analyst and I started creating websites with HTML in 1999. Since then I have added CSS, Javascript, Visual Basic and C# to my skillset. My commercial experience lies in .NET with a focus on C#, but I also have a particular interest in developing websites that are accessible and look good on all platforms.</h3>
+                    <h3 class="section-subheading text-light">Additional skills include graphic design, social media marketing and librarianship.</h3>
+                </div>
+                <div class="row">
+                
+                    <div class="col">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/wendy.jpeg" alt="..." />
+                            <h4 class="text-white">Wendy Booth</h4>
+                        </br>
+                       
+                            <a class="btn btn-primary-mycolour btn-social mx-2" href="https://twitter.com/AmAlwaysWriting" aria-label="Twitter Bot written in C#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary-mycolour btn-social mx-2" href="https://www.facebook.com/blackhillwebdesign/" aria-label="Wendy Booth Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary-mycolour btn-social mx-2" href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                               
+            </div>
+        </section>
+       
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Wendy Booth - Software Developer 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                       
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio modal popup-->
+        <div class="portfolio-modal modal fade" id="modalMultiplesof3and5" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">C#</h2>
+                                        <p class="item-intro text-muted">DataStoreDSX : PolicyHub</p>
+                                        <img class="img-fluid d-block mx-auto" src="https://1660200928.rsc.cdn77.org/wp-content/uploads/2022/03/Mitratech-Announces-Record-Growth-and-Momentum-in-2021.jpg" alt="..." />
+                                        <p>At Hitec Laboratories (now Mitratech), my .NET development focus was on DataStoreDSX (Enterprise Content Management), PolicyHub (Governance Risk & Compliance) and also VB maintenance of the legacy DataStore32 product.
+                                              
+                                            </br></br>Since leaving the position, I have continued to hone my C# skills and passed Microsoft's Programming in C# certification.<ul class="list-inline">
+                                            <li>
+                                                <strong>Client:</strong>
+                                                Hitec Laboratories
+                                            </li>
+                                            <li>
+                                                <strong>Category:</strong>
+                                                .NET Development
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Close Project
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
